@@ -1,0 +1,17 @@
+# bulk voltage target for CV. (55.2v eg 3.45v/cell for 16 cells 48V battery)
+bulk_voltage: "3.55"
+# Float Voltage : corresponds to the voltage at which the cells would be maintained at the end of cutoff. (53.6v eg 3.35v/cell for 16 cells 48V battery)
+float_v: "3.34"
+# Rebulk voltage < FLOAT at which BMS will rebulk, eg 3.325 V/Cell
+rebulk_voltage: "3.31"
+# Minimum discharge voltage eg 48v/16 = 3V per cell
+min_discharge_v: "3"
+# +--------------------------------------+
+# | Battery State of Health (SOH)        |
+# +--------------------------------------+
+# Maximum charging cycles is used to calculate the battey SOH, LF280K v3 =8000.0, LF280K v2 =6000.0, LF280=3000.0 (decimal is required)
+max_cycles: "3500.0"
+# High Temp Protection - Temp > OTP : Stop Charging and Discharging
+otp: "50.0"
+# Low Temp Protection  - Temp < UTP : Stop Charging
+utp: "1.0"
